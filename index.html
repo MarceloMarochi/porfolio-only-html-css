@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icono-porfolio-maleta.png" type="image/x-icon">
+    <title>Marochi Marcelo</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Sobre Mí</a></li>
+          <li><a href="">Proyectos</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="#footer">Ir al pie de la página</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section>
+      <div>
+        <h1>Soy Marcelo,</h1>
+        <h2>Desarrollador Full Stack</h2>
+        <h2>Estudiante de Ingeniería en Sistemas de Información</h2>
+        <p>
+          Hola, soy Marcelo Marochi, de Córdoba, Argentina y estudio Ingeniería
+          en Sistemas de Información en la Universidad Tecnológica Nacional.
+          Actualmente me encuentro a dos materias de recibir el título de
+          Analista Universitario de Sistemas.
+        </p>
+      </div>
+
+      <img src="img\coding-gris.png" alt="Una persona programando.">
+    </section>
+
+    <!-- Contacto -->
+    <section>
+      <form action="" method="" enctype="">
+        <fieldset>
+          <legend>Contacto</legend>
+
+          <!-- Vinculación del for con el name -->
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+
+          <br />
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+
+          <br />
+          <!-- Los input de tipo radio se vinculan por el name -->
+          <div>Hombre</div>
+          <input type="radio" name="sexo" value="hombre" />
+          <div>Mujer</div>
+          <input type="radio" name="sexo" value="mujer" />
+
+          <br />
+          <div>Acepta terminos y condiciones</div>
+          <input type="checkbox" name="acepta" value="1" />
+
+          <br />
+          <label for="mensaje">Esriba su mensaje</label>
+          <br />
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+          <br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </fieldset>
+      </form>
+    </section>
+
+    <footer id="footer">Marcelo Marochi</footer>
+  </body>
+</html>
