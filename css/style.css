@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -11,6 +12,9 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
 
 :root {
     --color-oscuro: #090a18; 
@@ -24,19 +28,34 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    background-color: #D9D9D9;
-    /* COLOR DE TEXTO */
-    color:var(--color-oscuro);
 }
 
+.container {
+    widht: 80%;
+    margin: 0 auto;
+    max-width: 2100px;
+}
+
+.col {
+    width: 100%;   
+}
 
 /* BARRA DE NAVEGACION  */
 header {
-    background-color:var(--color-gris)
+    padding-top: 1rem;
+    background-color:var(--color-oscuro);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .nav__list {
     list-style: none;
+    
+}
+
+.nav__link {
+    margin-left: 1.5rem;
 }
 
 /* Etiqueta <a> */
@@ -49,41 +68,51 @@ header {
 }
 
 
-
 /* INICIO SECCION 1 */
-
-#section {
-    background-color: var(--color-claro)
+#inicio {
+    background-color: var(--color-oscuro);
 }
 
-.inicio_h1  {
-    font-size: 2.5rem;
+.inicio {
+    padding-top: 8rem;
+}
+
+.inicio__h1  {
+    font-size: 4.5rem;
     font-weight: 700;
-    color: #090a18;
+    color: var(--color-claro);
+    margin-bottom: 1rem;
 }
 
-.inicio_h2 {
+.inicio__h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #090a18;
+    color: var(--color-claro);
 }
 
-.inicio_p {
+.inicio__p {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #090a18;
+    color: var(--color-claro);
+    margin-top: 1rem;
+    max-width: 40%;
+}
+
+.inicio__img {
+    text-align: right;
 }
 
 /* SECCION 2 PROYECTOS */
 .card {
     max-width: 350px;
+    min-height: 450px;
     margin: 2rem;
     padding: 2rem;
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
 }
 
 .card--light {
-    background-color: #fff;
+    background-color: var(--color-claro);
 }
 
 .card--dark {
@@ -101,5 +130,9 @@ header {
     background-color: #090a18;
     color: white;
     text-align: center;
+    padding: 0.4rem 0;
 }
 
+.footer__icon {
+    margin: 0.2rem 0.4rem;
+}
