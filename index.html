@@ -25,11 +25,12 @@
     <header>
       <div class="container">
       <nav>
-        <ul class="nav__list">
+        <ul class="nav__list flex__center">
           <li><a class="nav__link" href="">Inicio</a></li>
           <li><a class="nav__link" href="#inicio">Sobre Mí</a></li>
           <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
-          <li><a class="nav__link" href="">Skills</a></li>
+          <li><a class="nav__link" href="#educacion">Educación</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
           <li><a class="nav__link" href="./pags/contact.html">Contacto</a></li>
           <li><a class="nav__link" href="#footer">Ir al pie de la página</a></li>
         </ul>
@@ -42,17 +43,24 @@
     <section id="inicio">
         <div class="inicio" >
           <div class="container">
-            <h1 class="inicio__h1">Soy Marcelo,</h1>
-            <h2 class="inicio__h2">Desarrollador Full Stack</h2>
-            <h2 class="inicio__h2">Estudiante de Ingeniería en Sistemas de Información</h2>
-            <p class="inicio__p">
-              Hola, soy Marcelo Marochi, de Córdoba, Argentina y estudio Ingeniería
-              en Sistemas de Información en la <strong>Universidad Tecnológica Nacional.</strong>
-              Actualmente me encuentro a dos materias de recibir el título de
-              Analista Universitario de Sistemas.
-            </p>
-            <div class="inicio__img">
-              <img  src="img/marce-circ.png" alt="Una persona programando.">
+            <div class="flex_between ">
+              <!-- FLEXBOX: columna 1 -->
+              <div class="inicio__text">
+                <h1 class="inicio__h1">Soy Marcelo,</h1>
+                <h2 class="inicio__h2">Desarrollador Full Stack</h2>
+                <h2 class="inicio__h2">Estudiante de Ingeniería en Sistemas de Información</h2>
+                <p class="inicio__p">
+                  Hola, soy Marcelo Marochi, de Córdoba, Argentina y estudio Ingeniería
+                  en Sistemas de Información en la <strong>Universidad Tecnológica Nacional.</strong>
+                  Actualmente me encuentro a dos materias de recibir el título de
+                  Analista Universitario de Sistemas.
+                </p>
+              </div>
+
+              <!-- FLEXBOX: columna 2 -->
+              <div class="inicio__img">
+                <img  src="img/marce-circ.png" alt="Una persona programando.">
+              </div>
             </div>
           </div>
         </div>  
@@ -69,26 +77,129 @@
         <div class="row">
           
           <!-- Tarjeta 1 -->
-          <div class="card card--light">
+          <div class="card card--dark">
             <img class="card__img" src="./img/logo-serrahome-png.png" alt="">
             <h2 class="card__tittle">SERRAHOME</h2>
             <p class="card__description">SERRAHOME es un sistema de gestión de reservas que realicé junto a compañeros de la facultad para rendir la tesis de Analista Universitario en Sistemas. El sistema está realizado con NextJs, Typescript, TaildwindCSS, PostgreSQL y Prisma.</p>
-            <a href="pags/serrahome.html"><button class="card__button">Ir a SERRAHOME </button></a>
+            <a href="pags/serrahome.html"><button class="btn degrade">Ir a SERRAHOME </button></a>
           </div>
 
           <!-- Tarjeta 2 -->
-          <div class="card card--light">
+          <div class="card card--dark">
             <img class="card__img" src="img/img-strokestoneburger.jpg" alt="">
             <h2 class="card__tittle">Stroke&Stone Burger</h2>
             <p class="card__description">Este proyecto lo realicé como proyecto final del curso de desarrollo web de Coderhouse. El botón de abajo te lleva al sistema.</p>
-            <a href="https://marcelomarochi.github.io/proyectoFinalMarochi_desarrolloWebCoderhouse/index.html"><button class="card__button"> Ir al Proyecto</button></a>
+            <a href="https://marcelomarochi.github.io/proyectoFinalMarochi_desarrolloWebCoderhouse/index.html"><button class="btn degrade"> Ir al Proyecto</button></a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer id="footer">
+
+    <!-- Wave  -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#090a18" fill-opacity="1" d="M0,160L120,181.3C240,203,480,245,720,261.3C960,277,1200,267,1320,261.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+    <!-- Educación -->
+    <section id="educacion">
       <div class="container">
+        <h1 class="h1 educacion__h1">Educación</h1>
+        <div class="flex__educacion">
+          <div class="educacion__text">
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Ingeniería en Sistemas de Información</h2>
+              <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Actualidad</h3>
+              <p class="educacion__descripcion" >• Promedio académico: 7,809</p>
+            </div>
+
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Analista Universitario en Sistemas</h2>
+              <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Junio 2025</h3>
+              <p class="educacion__descripcion" >• Promedio académico: 7,809</p>
+            </div>
+
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Curso de React</h2>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/649cc80615ca920002030319">Credencial ID: 649cc80615ca920002030319</a>
+            </div>
+
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Curso de Javascript</h2>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+              <a href="https://www.coderhouse.com/ar/certificados/6416064559c99a0002302636">Credencial ID: 6416064559c99a0002302636</a>
+            </div>
+
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Curso de Desarrollo web</h2>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/63287effd531200b55798cec">Credencial ID: 63287effd531200b55798cec</a>
+            </div>
+            
+            <div class="educacion__item">
+              <hr width="100%" color="white" size="" />
+              <h2 class="h2 educacion__h2">Curso Argentina Programa</h2>
+              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2021.</h3>
+              <a class="educacion__descripcion" href="https://mumuki.io/argentina-programa/certificates/verify/vJ_RTf87F6iV4u1j"><p class="educacion__ulti">Ver Credencial</p></a>
+              <hr width="100%" color="white" size="" />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 - SKILLS -->
+     <section id="skills">
+      <div class="container skills__padding">
+        <h1 class="h1 skills__h1">Skills</h1>
+        <div class="flex__skills">
+          <div class="skills__item">
+            <h2 class="h2 skills__h2">Frontend</h2>
+            <ul class="skills__list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Typescript</li>
+              <li>TailwindCSS</li>
+            </ul>
+          </div>
+          <div class="skills__item">
+            <h2 class="h2 skills__h2">Backend</h2>
+            <ul class="skills__list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Prisma</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="skills__item">
+            <h2 class="h2 skills__h2">Herramientas</h2>
+            <ul class="skills__list">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>GitHub</li>
+              <li>VSCode</li>
+              <li>Postman</li>
+              <li>Insomnia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <footer id="footer">
+      <div class="container ">
         <div>Marcelo Gabriel Marochi</div>
 
         <a class="footer__icon" href="https://www.linkedin.com/in/marcelomarochi/"><i class="fab fa-linkedin"></i></a>

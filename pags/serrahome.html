@@ -25,11 +25,12 @@
     <header>
       <div class="container">
         <nav>
-          <ul>
+          <ul class="nav__list flex__center">
             <li><a class="nav__link" href="../index.html">Inicio</a></li>
             <li><a class="nav__link" href="../index.html#inicio">Sobre Mí</a></li>
             <li><a class="nav__link" href="../index.html#proyectos">Proyectos</a></li>
-            <li><a class="nav__link" href="">Skills</a></li>
+            <li><a class="nav__link" href="../index.html#educacion">Educación</a></li>
+            <li><a class="nav__link" href="../index.html#skills">Skills</a></li>
             <li><a class="nav__link" href="./contact.html">Contacto</a></li>
             <li><a class="nav__link" href="#footer">Ir al pie de la página</a></li>
           </ul>
@@ -38,23 +39,40 @@
     </header>
     
     <section class="serrahome">
-      <div class="container">
-          <h1 class="serrahome__h1">¿Qué es SERRAHOME?</h1>
-          <p class="serrahome__p">
-              <strong>SERRAHOME</strong> es un sistema de gestión de reservas para complejos de cabañas, desarrollado como proyecto final de la carrera de <strong>Analista Universitario en Sistemas</strong> en la <strong>Universidad Tecnológica Nacional, Facultad Regional Córdoba</strong>. Este software busca optimizar la administración de reservas, proporcionando una solución funcional, escalable e intuitiva. Utilizamos tecnologías modernas como <strong>Next.js</strong>, que permite combinar el desarrollo del frontend y backend en un único proyecto; <strong>React</strong>, para construir interfaces de usuario dinámicas y reutilizables; <strong>Prisma</strong>, como ORM para gestionar la base de datos relacional <strong>PostgreSQL</strong>; y <strong>Docker</strong>, para simplificar la implementación en entornos controlados. Además, empleamos <strong>Tailwind CSS</strong> para estilizar el sistema con un diseño responsive, asegurando una experiencia de usuario atractiva y adaptada a distintos dispositivos.
-          </p>
-          <p class="serrahome__p">
-              El desarrollo se llevó a cabo aplicando la metodología ágil <strong>Scrum</strong>, lo que nos permitió trabajar de manera iterativa y colaborativa. Organizamos el proyecto en 5 sprints a lo largo de 4 meses, sumando un total de 477 horas de trabajo. Cada sprint incluyó etapas de planificación, desarrollo y revisión, con ceremonias como reuniones de planificación y revisiones al finalizar cada ciclo. Iniciamos con un Sprint 0 para definir el backlog y tecnologías a utilizar, y en los siguientes sprints priorizamos funcionalidades clave, como el registro y visualización de reservas en un calendario, la gestión de unidades de alojamiento y la creación de reportes. Este enfoque ágil no solo nos ayudó a mantener el foco en las necesidades del cliente, sino también a adaptarnos rápidamente a cambios y desafíos.
-          </p>
-          <p class="serrahome__p">
-              A pesar de las dificultades iniciales, como encontrar un ritmo de trabajo óptimo y manejar decisiones críticas del dominio, el compromiso del equipo, compuesto por Patricio Bonetto, Julieta Ferrer, Valentín Moyano y yo, hizo posible culminar exitosamente. <strong>SERRAHOME</strong> es más que un software; es el reflejo de nuestro esfuerzo, aprendizaje y pasión por la tecnología, un proyecto que representa el cierre de una etapa y el comienzo de nuevas oportunidades.
-          </p>
-
-          <h2 class="serrahome__h2">A continuación una demo de como funciona el sistema:</h2>
-          <div >
-            <iframe class="serrahome__video" width="560" height="315" src="https://www.youtube.com/embed/hXc3_qdjOoo?si=xSph1nmztC6fMnLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="container flex_serrahome">
+          <!-- FLEXBOX: Columna 1 -->
+          <div class="serrahome__text">
+              <h1 class="serrahome__h1">¿Qué es SERRAHOME?</h1>
+              <p class="serrahome__p">
+                  <strong>SERRAHOME</strong> es un sistema de gestión de reservas para complejos de cabañas, desarrollado como proyecto final de la carrera de <strong>Analista Universitario en Sistemas</strong> en la <strong>Universidad Tecnológica Nacional, Facultad Regional Córdoba</strong>. Este software busca optimizar la administración de reservas, proporcionando una solución funcional, escalable e intuitiva. Utilizamos tecnologías modernas como <strong>Next.js</strong>, que permite combinar el desarrollo del frontend y backend en un único proyecto; <strong>React</strong>, para construir interfaces de usuario dinámicas y reutilizables; <strong>Prisma</strong>, como ORM para gestionar la base de datos relacional <strong>PostgreSQL</strong>; y <strong>Docker</strong>, para simplificar la implementación en entornos controlados. Además, empleamos <strong>Tailwind CSS</strong> para estilizar el sistema con un diseño responsive, asegurando una experiencia de usuario atractiva y adaptada a distintos dispositivos.
+              </p>
+              <p class="serrahome__p">
+                  El desarrollo se llevó a cabo aplicando la metodología ágil <strong>Scrum</strong>, lo que nos permitió trabajar de manera iterativa y colaborativa. Organizamos el proyecto en 5 sprints a lo largo de 4 meses, sumando un total de 477 horas de trabajo. Cada sprint incluyó etapas de planificación, desarrollo y revisión, con ceremonias como reuniones de planificación y revisiones al finalizar cada ciclo. Iniciamos con un Sprint 0 para definir el backlog y tecnologías a utilizar, y en los siguientes sprints priorizamos funcionalidades clave, como el registro y visualización de reservas en un calendario, la gestión de unidades de alojamiento y la creación de reportes. Este enfoque ágil no solo nos ayudó a mantener el foco en las necesidades del cliente, sino también a adaptarnos rápidamente a cambios y desafíos.
+              </p>
+              <p class="serrahome__p">
+                  A pesar de las dificultades iniciales, como encontrar un ritmo de trabajo óptimo y manejar decisiones críticas del dominio, el compromiso del equipo, compuesto por Patricio Bonetto, Julieta Ferrer, Valentín Moyano y yo, hizo posible culminar exitosamente. <strong>SERRAHOME</strong> es más que un software; es el reflejo de nuestro esfuerzo, aprendizaje y pasión por la tecnología, un proyecto que representa el cierre de una etapa y el comienzo de nuevas oportunidades.
+              </p>
           </div>
-          
+          <!-- FLEXBOX: Columna 2 -->
+          <div class="serrahome__flex-direction-column">
+            <div>
+              <h2 class="serrahome__h2">Demo de funcionamiento:</h2>
+              <div >
+                <iframe class="serrahome__video" width="860" height="515" src="https://www.youtube.com/embed/hXc3_qdjOoo?si=xSph1nmztC6fMnLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div>
+              <h2 class="serrahome__h2">Tecnologías</h2>
+              <div class="flex_serrahome__tecnologias">
+                <img class="serrahome_tecnologias" src="..\svg\nextjs_icon_132160.svg" alt="Next.js">
+                <img class="serrahome_tecnologias" src="..\svg\react_original_wordmark_logo_icon_146375.svg" alt=" React">
+                <img class="serrahome_tecnologias" src="..\svg\javascript_icon_130900.svg" alt="Javascript">
+                <img class="serrahome_tecnologias" src="..\svg\file_type_light_prisma_icon_130444.svg" alt="Prisma">
+                <img class="serrahome_tecnologias" src="..\svg\postgresql_plain_wordmark_logo_icon_146390.svg" alt="PostgreSQL">
+                <img class="serrahome_tecnologias" src="..\svg\docker_original_wordmark_logo_icon_146557.svg" alt="Docker">
+              </div>
+            </div>    
         </div>
     </section>
 
@@ -63,7 +81,7 @@
         <div>Marcelo Gabriel Marochi</div>
   
         <a href="https://www.linkedin.com/in/marcelomarochi/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/MarceloMarochi"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/MarceloMarochi"><i class="fab fa-github "></i></a>
   
         <div class="footer-bottom__copyright">
           &copy; Copyright 2025 | Creada por

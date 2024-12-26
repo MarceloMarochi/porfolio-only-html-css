@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+img, svg {
+    vertical-align: middle;
+}
+
 :root {
     --color-oscuro: #090a18; 
     --color-gris: #737373; 
@@ -40,19 +44,39 @@ body {
     width: 100%;   
 }
 
+.h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
 /* BARRA DE NAVEGACION  */
 header {
-    padding: 1rem 0 1rem 0;
+    padding: 3rem 0 3rem 0;
     background-color:var(--color-oscuro);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
     box-shadow: 0 0 30px 0 rgba(29, 31, 53, 0.45);
+}
+
+.flex__center {
+    display: flex;
+    justify-content: center;
 }
 
 .nav__list {
     list-style: none;
-    
 }
 
 .nav__link {
@@ -64,7 +88,7 @@ header {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -75,7 +99,17 @@ header {
 }
 
 .inicio {
-    padding-top: 8rem;
+    padding: 8rem 30rem 0 30rem;:
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.inicio__text{
+    max-width: 50%;
 }
 
 .inicio__h1  {
@@ -96,19 +130,27 @@ header {
     font-weight: 400;
     color: var(--color-claro);
     margin-top: 1rem;
-    max-width: 40%;
 }
 
 .inicio__img {
-    text-align: right;
+    max-width: 500px;
+    
 }
 
 /* SECCION 2 PROYECTOS */
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-araund;
+}
+
 .proyectos__h1 {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--color-oscuro);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .card {
@@ -117,6 +159,7 @@ header {
     margin: 2rem;
     padding: 2rem;
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
+    border-radius: 5%;
 }
 
 .card--light {
@@ -124,7 +167,7 @@ header {
 }
 
 .card--dark {
-    background-color: #090a18;
+    background-image: linear-gradient(to right,rgb(9, 10, 24),rgb(63, 67, 122));
     color: #fff;
 }
 
@@ -141,10 +184,85 @@ header {
     margin: 0.5rem 0;
 }
 
+
+/* SECTION 3 - EDUCACION */
+
+#educacion {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+}
+
+.flex__educacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.educacion__item {
+    padding: 1rem 0;
+}
+.educacion__h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.educacion__h2 {
+    margin: 1rem 0 1rem 0;
+}
+
+.educacion__segrenglon {
+    margin-bottom: 1rem;
+}
+
+.educacion__descripcion {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-claro);
+}
+
+.educacion__ulti {
+    margin-bottom: 1rem;
+}
+
+
+/* SECTION 3 - SKILLS */
+
+#skills {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+}
+
+.skills__h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    paddding: 8rem 0 2rem 0;
+}
+
+.flex__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills__padding {
+    padding: 10rem 0 10rem 0;  
+}
+
 /* SERRAHOME */
 
 .serrahome {
     margin: 4rem 0 4rem 0;
+    min-height: 80vh;
+}
+
+.flex_serrahome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.serrahome__text {
+    max-width: 50%;
 }
 
 .serrahome__h1 {
@@ -174,14 +292,56 @@ header {
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
 }
 
+.flex_serrahome__tecnologias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serrahome_tecnologias {
+    widht: 6vh;
+    height: 6vh;
+    margin-bottom: 5rem;
+}
+
+.serrahome__flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
 /* FOOTER */
 #footer {
     background-color: #090a18;
     color: white;
     text-align: center;
     padding: 0.4rem 0;
+    
 }
+
 
 .footer__icon {
     margin: 0.2rem 0.4rem;
 }
+
+
+/* BOTONES */
+.btn {
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.degrade {background-image: linear-gradient(to right, #6c757d, #adb5bd);} 
+.degrade:hover {background-image: linear-gradient(to right, #848b92, #adb5bd);;}
+
+
+
+
+
