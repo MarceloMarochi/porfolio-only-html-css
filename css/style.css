@@ -249,6 +249,41 @@ header {
     padding: 10rem 0 10rem 0;  
 }
 
+
+/* SECTION 4 - CONTACTO */
+#contacto {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.contacto__info {
+    margin: 2rem 0;
+}
+
+.contacto__linea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.contacto__iconos {
+    width: 50px;
+    height: 50px;
+}
+
+.contacto__p {
+    color: var(--color-claro);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+
+
 /* SERRAHOME */
 
 .serrahome {
@@ -258,8 +293,6 @@ header {
 
 .flex_serrahome {
     display: flex;
-    
-    
 }
 
 .serrahome__text {
