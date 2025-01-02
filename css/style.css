@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 
+/* Para que las imagenes se adapten */
 img {
     max-width: 100%;
 }
@@ -35,53 +36,102 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
-    max-width: 2100px;
+    max-width: 1320px;
 }
 
 .col {
     width: 100%;   
 }
 
-.h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+.heading-line::before {
+    content: "";
+    width: 13rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-oscuro);
 }
 
-.h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
+.heading-line--claro::before {
+    background-color: var(--color-claro);
 }
 
 
 /* BARRA DE NAVEGACION  */
 header {
-    padding: 3rem 0 3rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    min-height: 4rem;
     background-color:var(--color-oscuro);
     position: sticky;
     top: 0;
     z-index: 1;
     box-shadow: 0 0 30px 0 rgba(29, 31, 53, 0.45);
+    text-align: center;
 }
 
-.flex__center {
-    display: flex;
-    justify-content: center;
+.nav {
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
 }
 
-.nav__list {
-    list-style: none;
+/* MENU HAMBURGUESA */
+.nav-toggle {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 0;
 }
 
-.nav__link {
-    margin-left: 1.5rem;
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: 0.75;
 }
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
 
 /* Etiqueta <a> */
 .nav__link {
@@ -92,28 +142,39 @@ header {
     font-size: 1.2rem;
 }
 
+.nav__item {
+    margin-top: 0.75rem;
+}
+
+.nav__list {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
+
+.nav__espacio {
+    widht: 100%;
+    height: 3rem;
+}
+
+
 
 /* INICIO SECCION 1 */
-#inicio {
-    background-color: var(--color-oscuro);
-}
 
 .inicio {
-    padding: 8rem 10rem 0 10rem;:
-}
-
-.flex_between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.inicio__text{
-    max-width: 50%;
+    background-color: var(--color-oscuro);
+    padding: 3rem 0 0 0;
+    height: 100%;
+    width: 100%;
 }
 
 .inicio__h1  {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-claro);
     margin-bottom: 1rem;
@@ -129,33 +190,40 @@ header {
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--color-claro);
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .inicio__img {
-    max-width: 40vh;
-    
+    /* max-width: 40vh; */
+    margin-top: 2rem;
 }
+
+.flex_between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 /* SECCION 2 PROYECTOS */
 
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-araund;
-}
-
 .proyectos__h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-oscuro);
     margin-bottom: 1rem;
     text-align: center;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
+    text-align: center;
     max-width: 350px;
-    min-height: 450px;
+    max-height: 600px;
     margin: 2rem;
     padding: 2rem;
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
@@ -205,7 +273,8 @@ header {
     padding: 1rem 0;
 }
 .educacion__h1 {
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -228,28 +297,51 @@ header {
 }
 
 
-/* SECTION 3 - SKILLS */
+/* SECTION 4 - SKILLS */
 
 #skills {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
+    text-align: center;
 }
 
 .skills__h1 {
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    paddding: 8rem 0 2rem 0;
+    padding-bottom: 0.5rem
 }
 
-.flex__skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.skills__h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-claro);
+    margin-bottom: 0.25rem;
+}
+
+.skills__li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-claro);
+}
+
+.skills__item {
+    margin-bottom: 2rem;
+}
+
+.heading-line--skills::before {
+    content: "";
+    width: 6rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-claro);
+    margin-bottom: 2rem;
 }
 
 .skills__padding {
-    padding: 10rem 0 10rem 0;  
+    padding: 5rem 0 2.5rem 0;  
 }
+
 
 
 /* SECTION 4 - CONTACTO */
@@ -257,7 +349,22 @@ header {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
-    padding: 3rem 0 5rem 0;
+    padding: 2.5rem 0 5rem 0;
+}
+
+.contacto__h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.heading-line--contacto {
+    content: "";
+    width: 10rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-claro);
+    margin-bottom: 2rem;
 }
 
 .contacto__info {
@@ -270,6 +377,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .contacto__iconos {
@@ -382,6 +490,84 @@ header {
 
 .degrade {background-image: linear-gradient(to right, #6c757d, #adb5bd);} 
 .degrade:hover {background-image: linear-gradient(to right, #848b92, #adb5bd);;}
+
+
+@media (min-width: 430px) {
+    .inicio__img {
+        max-width: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* SECCION 1 - INICIO */
+    .flex_between {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    } 
+    
+    .inicio__text{
+        max-width: 50%;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    /* BARRA DE NAVEGACION */
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    }
+
+    .flex__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__link {
+        margin-left: 1.5rem;
+    }
+
+    .nav__espacio {
+        widht: 0px;
+        height: 0px;
+    }
+
+}
+    
+
+@media (min-width: 1200px) {
+    /* SECCION 2 PROYECTOS */
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-araund;
+    }
+
+    /* SECTION 3 - SKILLS */
+    .flex__skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 3rem;
+    } 
+}
+
 
 
 

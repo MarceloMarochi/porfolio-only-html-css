@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Etiquetas de compatibilidad -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="shortcut icon" href="img/icono-porfolio-maleta.png" type="image/x-icon">
     
     <!-- GOOGLE FONTS -->
@@ -24,17 +27,21 @@
   <body>
     <header>
       <div class="container">
-      <nav>
-        <ul class="nav__list flex__center">
-          <li><a class="nav__link" href="">Inicio</a></li>
-          <li><a class="nav__link" href="#inicio">Sobre Mí</a></li>
-          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
-          <li><a class="nav__link" href="#educacion">Educación</a></li>
-          <li><a class="nav__link" href="#skills">Skills</a></li>
-          <li><a class="nav__link" href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+        <button class="nav-toggle" aria-label="abrir navegacion">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav__espacio"></div>
+        <nav class="nav">
+          <ul class="nav__list flex__nav">
+            <li class="nav__item"><a class="nav__link" href="">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="#inicio">Sobre Mí</a></li>
+            <li class="nav__item"><a class="nav__link" href="#proyectos">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__link" href="#educacion">Educación</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
 
@@ -42,7 +49,7 @@
     <section id="inicio">
         <div class="inicio" >
           <div class="container">
-            <div class="flex_between ">
+            <div class="flex_between">
               <!-- FLEXBOX: columna 1 -->
               <div class="inicio__text">
                 <h1 class="inicio__h1">Soy Marcelo,</h1>
@@ -73,7 +80,8 @@
 
       <div class="container">
         <h1 class="proyectos__h1">Proyectos</h1>
-        <div class="row">
+        <div class="heading-line"></div>
+        <div class="row ">
           
           <!-- Tarjeta 1 -->
           <div class="card card--dark">
@@ -91,7 +99,7 @@
             <h2 class="card__tittle">Stroke&Stone Burger</h2>
             <div class="card__abajo"></div>
               <p class="card__description">Este proyecto lo realicé como proyecto final del curso de desarrollo web de Coderhouse. El botón de abajo te lleva al sistema.</p>
-              <a href="https://marcelomarochi.github.io/proyectoFinalMarochi_desarrolloWebCoderhouse/index.html"><button class="btn degrade"> Ir al Proyecto</button></a>
+              <a href="https://marcelomarochi.github.io/proyectoFinalMarochi_desarrolloWebCoderhouse/index.html" target="_blank"><button class="btn degrade"> Ir al Proyecto</button></a>
             </div>
           </div>
         </div>
@@ -128,28 +136,28 @@
               <hr width="100%" color="white" size="" />
               <h2 class="h2 educacion__h2">Curso de React</h2>
               <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/649cc80615ca920002030319">Credencial ID: 649cc80615ca920002030319</a>
+              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/649cc80615ca920002030319" target="_blank">Credencial ID: 649cc80615ca920002030319</a>
             </div>
 
             <div class="educacion__item">
               <hr width="100%" color="white" size="" />
               <h2 class="h2 educacion__h2">Curso de Javascript</h2>
               <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/6416064559c99a0002302636">Credencial ID: 6416064559c99a0002302636</a>
+              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/6416064559c99a0002302636" target="_blank">Credencial ID: 6416064559c99a0002302636</a>
             </div>
 
             <div class="educacion__item">
               <hr width="100%" color="white" size="" />
               <h2 class="h2 educacion__h2">Curso de Desarrollo web</h2>
               <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/63287effd531200b55798cec">Credencial ID: 63287effd531200b55798cec</a>
+              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/63287effd531200b55798cec" target="_blank">Credencial ID: 63287effd531200b55798cec</a>
             </div>
             
             <div class="educacion__item">
               <hr width="100%" color="white" size="" />
               <h2 class="h2 educacion__h2">Curso Argentina Programa</h2>
               <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2021.</h3>
-              <a class="educacion__descripcion" href="https://mumuki.io/argentina-programa/certificates/verify/vJ_RTf87F6iV4u1j"><p class="educacion__ulti">Ver Credencial</p></a>
+              <a class="educacion__descripcion" href="https://mumuki.io/argentina-programa/certificates/verify/vJ_RTf87F6iV4u1j" target="_blank"><p class="educacion__ulti">Ver Credencial</p></a>
               <hr width="100%" color="white" size="" />
             </div>
           </div>
@@ -162,39 +170,39 @@
      <section id="skills">
       <div class="container skills__padding">
         <h1 class="h1 skills__h1">Skills</h1>
+        <div class="heading-line--skills"></div>
         <div class="flex__skills">
           <div class="skills__item">
             <h2 class="h2 skills__h2">Frontend</h2>
             <ul class="skills__list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>Typescript</li>
-              <li>TailwindCSS</li>
+              <li class="skills__li">HTML</li>
+              <li class="skills__li">CSS</li>
+              <li class="skills__li">JavaScript</li>
+              <li class="skills__li">React</li>
+              <li class="skills__li">Next.js</li>
+              <li class="skills__li">Typescript</li>
+              <li class="skills__li">TailwindCSS</li>
             </ul>
           </div>
           <div class="skills__item">
             <h2 class="h2 skills__h2">Backend</h2>
             <ul class="skills__list">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Prisma</li>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
+              <li class="skills__li">Node.js</li>
+              <li class="skills__li">Express</li>
+              <li class="skills__li">Prisma</li>
+              <li class="skills__li">PostgreSQL</li>
+              <li class="skills__li">MySQL</li>
+              <li class="skills__li">MongoDB</li>
             </ul>
           </div>
           <div class="skills__item">
             <h2 class="h2 skills__h2">Herramientas</h2>
             <ul class="skills__list">
-              <li>Git</li>
-              <li>Docker</li>
-              <li>GitHub</li>
-              <li>VSCode</li>
-              <li>Postman</li>
-              <li>Insomnia</li>
+              <li class="skills__li">Git</li>
+              <li class="skills__li">Docker</li>
+              <li class="skills__li">GitHub</li>
+              <li class="skills__li">VSCode</li>
+              <li class="skills__li">Postman</li>
             </ul>
           </div>
         </div>
@@ -205,6 +213,7 @@
     <section id="contacto">
       <div class="container ">
         <h1 class="h1 contacto__h1">Contacto</h1>
+        <div class="heading-line--contacto"></div>
         <div class="contacto__info">
           
           <div class="contacto__linea">
@@ -214,12 +223,12 @@
 
           <div class="contacto__linea">
             <img class="contacto__iconos" src="svg/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg" alt="Icono WhatsApp">
-            <p class="contacto__p">3517660421</p>
+            <a href="https://wa.me/3517660421/" target="_blank"><p class="contacto__p">Ir a WhatsApp</p></a>
           </div>
 
           <div class="contacto__linea">
             <img class="contacto__iconos" src="svg/in_linked_linkedin_media_social_icon_124259.svg" alt="Icono Linkedin">
-            <a href="https://www.linkedin.com/in/marcelomarochi/"><p class="contacto__p">https://www.linkedin.com/in/marcelomarochi/</p></a>
+            <a href="https://www.linkedin.com/in/marcelomarochi/" target="_blank"><p class="contacto__p">Ir a Linkedin</p></a>
           </div>
 
         </div>
@@ -231,14 +240,15 @@
       <div class="container ">
         <div>Marcelo Gabriel Marochi</div>
 
-        <a class="footer__icon" href="https://www.linkedin.com/in/marcelomarochi/"><i class="fab fa-linkedin"></i></a>
-        <a class="footer__icon" href="https://github.com/MarceloMarochi"><i class="fab fa-github"></i></a>
+        <a class="footer__icon" href="https://www.linkedin.com/in/marcelomarochi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="footer__icon" href="https://github.com/MarceloMarochi" target="_blank"><i class="fab fa-github"></i></a>
 
         <div class="footer-bottom__copyright">
           &copy; Copyright 2025 | Creada por
-          <a href="https://github.com/MarceloMarochi">MarceloMarochi</a>
+          <a href="https://github.com/MarceloMarochi" target="_blank">MarceloMarochi</a>
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
