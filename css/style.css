@@ -173,6 +173,12 @@ header {
     width: 100%;
 }
 
+.svg__inicio {
+    transform: translateY(-0.5rem);
+    position: relative;
+    z-index: -1;
+}
+
 .inicio__h1  {
     font-size: 2.5rem;
     font-weight: 700;
@@ -276,6 +282,10 @@ header {
 #educacion {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
+}
+
+.svg__educacion {
+    transform: translateY(0.5rem);
 }
 
 .flex__educacion {
