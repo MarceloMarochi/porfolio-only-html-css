@@ -204,6 +204,22 @@ header {
     align-items: center;
 } 
 
+.inicio__animacion {
+    animation-duration:4s;
+    animation-name: aparecer;
+    /* animation-delay: 0.5s; */
+    animation-iterator-count: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* SECCION 2 PROYECTOS */
 
 .proyectos__h1 {

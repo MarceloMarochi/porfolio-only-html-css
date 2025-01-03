@@ -22,6 +22,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Marochi Marcelo</title>
   </head>
   <body>
@@ -34,11 +38,11 @@
         <nav class="nav">
           <ul class="nav__list flex__nav">
             <li class="nav__item"><a class="nav__link" href="">Inicio</a></li>
-            <li class="nav__item"><a class="nav__link" href="#inicio">Sobre Mí</a></li>
-            <li class="nav__item"><a class="nav__link" href="#proyectos">Proyectos</a></li>
-            <li class="nav__item"><a class="nav__link" href="#educacion">Educación</a></li>
-            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-            <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
+            <li class="nav__item"><a class="nav__link" href="index.html">Sobre Mí</a></li>
+            <li class="nav__item"><a class="nav__link" href="./index.html#proyectos">Proyectos</a></li>
+            <li class="nav__item"><a class="nav__link" href="./index.html#educacion">Educación</a></li>
+            <li class="nav__item"><a class="nav__link" href="./index.html#skills">Skills</a></li>
+            <li class="nav__item"><a class="nav__link" href="./index.html#contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -48,8 +52,8 @@
     <!-- Inicio -->
     <section id="inicio">
         <div class="inicio" >
-          <div class="container">
-            <div class="flex_between">
+          <div class="container ">
+            <div class="flex_between animate__animated animate__bounceInDown inicio__animacion">
               <!-- FLEXBOX: columna 1 -->
               <div class="inicio__text">
                 <h1 class="inicio__h1">Soy Marcelo,</h1>
@@ -78,7 +82,7 @@
     <!-- Proyectos -->
     <section id="proyectos">
 
-      <div class="container">
+      <div class="container animate__animated animate__zoomInUp">
         <h1 class="proyectos__h1">Proyectos</h1>
         <div class="heading-line"></div>
         <div class="row ">
@@ -113,55 +117,57 @@
     <!-- Educación -->
     <section id="educacion">
       <div class="container">
-        <h1 class="h1 educacion__h1">Educación</h1>
-        <div class="flex__educacion">
-          <div class="educacion__text">
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Ingeniería en Sistemas de Información</h2>
-              <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Actualidad</h3>
-              <p class="educacion__descripcion" >• Promedio académico: 7,77</p>
-            </div>
+        <div class="animate__animated animate__lightSpeedInRight">
+          <h1 class="h1 educacion__h1">Educación</h1>
+          <div class="flex__educacion">
+            <div class="educacion__text">
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Ingeniería en Sistemas de Información</h2>
+                <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Actualidad</h3>
+                <p class="educacion__descripcion" >• Promedio académico: 7,77</p>
+              </div>
 
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Analista Universitario en Sistemas</h2>
-              <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Junio 2025</h3>
-              <p class="educacion__descripcion" >• Promedio académico: 7,87</p>
-            </div>
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Analista Universitario en Sistemas</h2>
+                <h3 class="h3 educacion__h3"> Universidad Tecnológica Nacional | Facultad Regional Córdoba.</h3>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Córdoba, Argentina | Febrero 2020 - Junio 2025</h3>
+                <p class="educacion__descripcion" >• Promedio académico: 7,87</p>
+              </div>
 
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Curso de React</h2>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/649cc80615ca920002030319" target="_blank">Credencial ID: 649cc80615ca920002030319</a>
-            </div>
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Curso de React</h2>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+                <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/649cc80615ca920002030319" target="_blank">Credencial ID: 649cc80615ca920002030319</a>
+              </div>
 
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Curso de Javascript</h2>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/6416064559c99a0002302636" target="_blank">Credencial ID: 6416064559c99a0002302636</a>
-            </div>
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Curso de Javascript</h2>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+                <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/6416064559c99a0002302636" target="_blank">Credencial ID: 6416064559c99a0002302636</a>
+              </div>
 
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Curso de Desarrollo web</h2>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
-              <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/63287effd531200b55798cec" target="_blank">Credencial ID: 63287effd531200b55798cec</a>
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Curso de Desarrollo web</h2>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2023.</h3>
+                <a class="educacion__descripcion" href="https://www.coderhouse.com/ar/certificados/63287effd531200b55798cec" target="_blank">Credencial ID: 63287effd531200b55798cec</a>
+              </div>
+              
+              <div class="educacion__item">
+                <hr width="100%" color="white" size="" />
+                <h2 class="h2 educacion__h2">Curso Argentina Programa</h2>
+                <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2021.</h3>
+                <a class="educacion__descripcion" href="https://mumuki.io/argentina-programa/certificates/verify/vJ_RTf87F6iV4u1j" target="_blank"><p class="educacion__ulti">Ver Credencial</p></a>
+                <hr width="100%" color="white" size="" />
+              </div>
             </div>
             
-            <div class="educacion__item">
-              <hr width="100%" color="white" size="" />
-              <h2 class="h2 educacion__h2">Curso Argentina Programa</h2>
-              <h3 class="h3 educacion__h3 educacion__segrenglon">Coderhouse | 2021.</h3>
-              <a class="educacion__descripcion" href="https://mumuki.io/argentina-programa/certificates/verify/vJ_RTf87F6iV4u1j" target="_blank"><p class="educacion__ulti">Ver Credencial</p></a>
-              <hr width="100%" color="white" size="" />
-            </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -169,41 +175,45 @@
     <!-- SECTION 3 - SKILLS -->
      <section id="skills">
       <div class="container skills__padding">
-        <h1 class="h1 skills__h1">Skills</h1>
-        <div class="heading-line--skills"></div>
-        <div class="flex__skills">
-          <div class="skills__item">
-            <h2 class="h2 skills__h2">Frontend</h2>
-            <ul class="skills__list">
-              <li class="skills__li">HTML</li>
-              <li class="skills__li">CSS</li>
-              <li class="skills__li">JavaScript</li>
-              <li class="skills__li">React</li>
-              <li class="skills__li">Next.js</li>
-              <li class="skills__li">Typescript</li>
-              <li class="skills__li">TailwindCSS</li>
-            </ul>
-          </div>
-          <div class="skills__item">
-            <h2 class="h2 skills__h2">Backend</h2>
-            <ul class="skills__list">
-              <li class="skills__li">Node.js</li>
-              <li class="skills__li">Express</li>
-              <li class="skills__li">Prisma</li>
-              <li class="skills__li">PostgreSQL</li>
-              <li class="skills__li">MySQL</li>
-              <li class="skills__li">MongoDB</li>
-            </ul>
-          </div>
-          <div class="skills__item">
-            <h2 class="h2 skills__h2">Herramientas</h2>
-            <ul class="skills__list">
-              <li class="skills__li">Git</li>
-              <li class="skills__li">Docker</li>
-              <li class="skills__li">GitHub</li>
-              <li class="skills__li">VSCode</li>
-              <li class="skills__li">Postman</li>
-            </ul>
+        <div class="animate__animated animate__flipInX">
+
+        
+          <h1 class="h1 skills__h1">Skills</h1>
+          <div class="heading-line--skills"></div>
+          <div class="flex__skills">
+            <div class="skills__item">
+              <h2 class="h2 skills__h2">Frontend</h2>
+              <ul class="skills__list">
+                <li class="skills__li">HTML</li>
+                <li class="skills__li">CSS</li>
+                <li class="skills__li">JavaScript</li>
+                <li class="skills__li">React</li>
+                <li class="skills__li">Next.js</li>
+                <li class="skills__li">Typescript</li>
+                <li class="skills__li">TailwindCSS</li>
+              </ul>
+            </div>
+            <div class="skills__item">
+              <h2 class="h2 skills__h2">Backend</h2>
+              <ul class="skills__list">
+                <li class="skills__li">Node.js</li>
+                <li class="skills__li">Express</li>
+                <li class="skills__li">Prisma</li>
+                <li class="skills__li">PostgreSQL</li>
+                <li class="skills__li">MySQL</li>
+                <li class="skills__li">MongoDB</li>
+              </ul>
+            </div>
+            <div class="skills__item">
+              <h2 class="h2 skills__h2">Herramientas</h2>
+              <ul class="skills__list">
+                <li class="skills__li">Git</li>
+                <li class="skills__li">Docker</li>
+                <li class="skills__li">GitHub</li>
+                <li class="skills__li">VSCode</li>
+                <li class="skills__li">Postman</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -211,7 +221,7 @@
 
      <!-- SECTION 4 - CONTACTO -->
     <section id="contacto">
-      <div class="container ">
+      <div class="container animate__animated animate__jackInTheBox">
         <h1 class="h1 contacto__h1">Contacto</h1>
         <div class="heading-line--contacto"></div>
         <div class="contacto__info">
