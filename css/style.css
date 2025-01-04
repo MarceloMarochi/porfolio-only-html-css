@@ -461,15 +461,13 @@ header {
 }
 
 .serrahome_tecnologias {
-    widht: 6vh;
     height: 6vh;
     margin-bottom: 5rem;
-    transition: all 0.3s;
+    transition: transform 0.3s;
 }
 
 .serrahome_tecnologias:hover {
-    widht: 7vh;
-    height: 7vh;
+    transform: scale(1.1667);
 }
 
 /* FOOTER */
