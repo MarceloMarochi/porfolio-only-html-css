@@ -250,6 +250,11 @@ header {
     padding: 2rem;
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
     border-radius: 5%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1667);
 }
 
 .card--light {
@@ -370,7 +375,7 @@ header {
 
 
 
-/* SECTION 4 - CONTACTO */
+/* SECTION 5 - CONTACTO */
 #contacto {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
@@ -404,6 +409,11 @@ header {
     align-items: center;
     padding: 1rem 0;
     flex-wrap: wrap;
+    transition: transform 0.3s;
+}
+
+.contacto__linea:hover {
+    transform: scale(1.1667);
 }
 
 .contacto__iconos {
