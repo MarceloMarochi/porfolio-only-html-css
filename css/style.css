@@ -427,14 +427,6 @@ header {
     min-height: 80vh;
 }
 
-/* .flex_serrahome {
-    display: flex;
-} */
-
-/* .serrahome__text {
-    max-width: 50%;
-} */
-
 .serrahome__h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -472,21 +464,13 @@ header {
     widht: 6vh;
     height: 6vh;
     margin-bottom: 5rem;
+    transition: all 0.3s;
 }
 
-/* 
-.serra__columna__margin {
-    margin: 0 1rem 0 5rem;
-}   
-
-
-
-.serrahome__flex-direction-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-} */
+.serrahome_tecnologias:hover {
+    widht: 7vh;
+    height: 7vh;
+}
 
 /* FOOTER */
 #footer {
