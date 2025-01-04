@@ -244,13 +244,21 @@ header {
 
 .card {
     text-align: center;
-    max-width: 350px;
-    max-height: 600px;
+    width: 350px;
+    height: 550px;
     margin: 2rem;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
     border-radius: 5%;
     transition: transform 0.3s;
+    display: grid;
+    grid-gap: 1rem;
+    grid-temlate-columns: 1fr;
+    grid-template-rows: 40% 10% 50%;
+    grid-template-areas: 
+        "img"
+        "tittle"
+        "abajo";
 }
 
 .card:hover {
@@ -267,18 +275,27 @@ header {
 }
 
 .card__img {
+    grid-area: img;
     max-width: 100%;
     border-radius: 10px;
-    min-height: 22vh;
+    /* min-height: 22vh; */
 }
 
 .card__tittle {
-    margin: 1rem 0 0.5rem 0;
+    grid-area: tittle;
+    /* margin: 1rem 0 0.5rem 0; */
 }
 
 .card__description {
-    margin: 0.5rem 0;
-    min-height: 21vh; 
+    /* margin: 0.5rem 0; */
+    /* min-height: 21vh;  */
+}
+
+.card__abajo {
+    grid-area: abajo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
