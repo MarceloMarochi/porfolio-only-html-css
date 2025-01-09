@@ -324,15 +324,75 @@ header {
     opacity: 0.7;
   }
 
-  .fa-linkedin {
+  /* .fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+  } */
 
   .fa-github {
     background: #24292e;
     color: white;
   }
+
+  /* BOTON ANIMADO */
+.chatbot-linkedin-btn {
+    display: block;
+    position: relative;
+    background: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.93rem 3.3rem 0.93rem 1.2rem;
+    font-weight: 700;
+    border: 0.1rem solid white;
+    border-radius: 50rem;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: var(--color-oscuro);
+}
+
+.chatbot-linkedin-btn span {
+    position: absolute;
+    background-color: #007bb5;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.chatbot-linkedin-btn span i {
+    color: white;
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+.chatbot-linkedin-btn:hover {
+    color: white;   
+}
+
+.chatbot-linkedin-btn:hover span {
+    background-color:rgb(0, 94, 138);
+}
+
+.chatbot-linkedin-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(to right,rgb(1, 112, 164),rgb(64, 187, 244));
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.5s;
+}
+
+.chatbot-linkedin-btn:hover:before {
+    height: 190%;
+}
 
 
 /* SECTION 3 - EDUCACION */
@@ -571,6 +631,14 @@ header {
 
 .footer__icon {
     margin: 0.2rem 0.4rem;
+}
+
+.fa-linkedin-footer {
+    color: white;
+}
+
+.footer__name {
+    color: white;
 }
 
 
