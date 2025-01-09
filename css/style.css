@@ -278,12 +278,16 @@ header {
     grid-area: img;
     max-width: 100%;
     border-radius: 10px;
-    /* min-height: 22vh; */
 }
 
+.card__img-dulce {
+    grid-area: img;
+    max-width: 100%;
+    height: 100%;
+    justify-self: center;
+}
 .card__tittle {
     grid-area: tittle;
-    /* margin: 1rem 0 0.5rem 0; */
 }
 
 .card__description {
@@ -297,6 +301,38 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.card__svg {
+    display: flex;
+    justify-content: center;
+}
+
+.card__svg__iconos {
+    margin: 0 1rem;
+}
+
+.fak {
+    padding: 1rem;
+    font-size: 4rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 75%;
+  }
+
+  .fak:hover {
+    opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: #24292e;
+    color: white;
+  }
 
 
 /* SECTION 3 - EDUCACION */
