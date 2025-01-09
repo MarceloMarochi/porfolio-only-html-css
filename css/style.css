@@ -473,18 +473,27 @@ header {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-oscuro);
-    margin: 3rem 0 1rem 0;
+    margin: 3rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.heading-line-demo::before {
+    content: "";
+    width: 17rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-oscuro);
 }
 
 .serrahome__video {
-    /* max-width: 100%; */
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.45);
 
 }
 
 .flex_serrahome__tecnologias {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .serrahome_tecnologias {
@@ -496,6 +505,22 @@ header {
 .serrahome_tecnologias:hover {
     transform: scale(1.3667);
 }
+
+.serrahome__linkedin {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.heading-line-linkedin::before {
+    content: "";
+    width: 19rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-oscuro);
+}
+
 
 /* FOOTER */
 #footer {
@@ -534,6 +559,10 @@ header {
     .inicio__img {
         max-width: 40vh;
     }
+
+    .heading-line-demo::before { 
+        width: 25rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -556,7 +585,11 @@ header {
     
     .inicio__text{
         max-width: 50%;
-    } 
+    }
+
+    .serrahome_tecnologias {
+        height: 9vh;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -588,6 +621,10 @@ header {
     .nav__espacio {
         widht: 0px;
         height: 0px;
+    }
+
+    .serrahome_tecnologias {
+        height: 12vh;
     }
 
 }
@@ -625,9 +662,7 @@ header {
     
     .serrahome__flex-direction-column {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
+        flex-direction: column;        
     }
 
     .serrahome__video {
