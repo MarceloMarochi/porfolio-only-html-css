@@ -85,30 +85,35 @@
 
     <!-- Proyectos -->
     <section id="proyectos">
-
       <div class="container animate__animated animate__zoomInUp">
         <h1 class="proyectos__h1">Proyectos</h1>
         <div class="heading-line"></div>
-        <div class="row ">
-          
-          <!-- Tarjeta 1 -->
-          <div class="card card--dark">
-            <img class="card__img" src="./img/logo-serrahome-png.png" alt="">
-            <h2 class="card__tittle">SERRAHOME</h2>
-            <div class="card__abajo">
-              <p class="card__description">SERRAHOME es un sistema de gestión de reservas que realicé junto a compañeros de la facultad para rendir la tesis de Analista Universitario en Sistemas. El sistema está realizado con NextJs, Typescript, TaildwindCSS, PostgreSQL y Prisma.</p>
-              <a href="pags/serrahome.html"><button class="btn degrade">Ir a SERRAHOME </button></a>
+    
+        <div class="carousel-list" id="carousel-list">
+          <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+            </svg>
+          </button>
+    
+          <div class="row carousel-track" id="track">
+            <!-- Tarjeta 1 -->
+            <div class="card card--dark carrusel">
+              <img class="card__img" src="./img/logo-serrahome-png.png" alt="">
+              <h2 class="card__tittle">SERRAHOME</h2>
+              <div class="card__abajo">
+                <p class="card__description">SERRAHOME es un sistema de gestión de reservas que realicé junto a compañeros de la facultad para rendir la tesis de Analista Universitario en Sistemas. El sistema está realizado con NextJs, Typescript, TaildwindCSS, PostgreSQL y Prisma.</p>
+                <a href="pags/serrahome.html"><button class="btn degrade">Ir a SERRAHOME </button></a>
+              </div>
             </div>
-          </div>
-
-          <!-- Tarjeta 2 -->
-          <div class="card card--dark">
-            <img class="card__img-dulce" src="img/dulce-antojo.png" alt="">
-            <h2 class="card__tittle">Chatbot Dulce Antojo</h2>
+    
+            <!-- Tarjeta 2 -->
+            <div class="card card--dark carrusel">
+              <img class="card__img-dulce" src="img/dulce-antojo.png" alt="">
+              <h2 class="card__tittle">Chatbot Dulce Antojo</h2>
               <div class="card__abajo">
                 <p class="card__description">Desarrollé un chatbot utilizando Node.js, diseñado para resolver consultas de clientes de un emprendimiento de ventas de panificados. Este sistema simula interacciones automatizadas, ofreciendo respuestas rápidas y eficientes a preguntas comunes.</p>
-                 <div class="card__svg">
-
+                <div class="card__svg">
                   <div class="card__svg__iconos">
                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7282885502892953600/" target="_blank">
                       <button class="chatbot-linkedin-btn">
@@ -116,28 +121,31 @@
                       </button>
                     </a>
                   </div>
-
-                  <!-- <div class="card__svg__iconos">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7282885502892953600/" target="_blank" class="fa fak fa-linkedin"></a>
-                  </div> -->
                   <div class="card__svg__iconos">
                     <a href="https://github.com/MarceloMarochi/chatbot-nodejs" target="_blank" class="fa fak fa-github"></a>
                   </div>
-
-                 </div>
+                </div>
               </div>
             </div>
-
-          <!-- Tarjeta 3 -->
-          <div class="card card--dark">
-            <img class="card__img" src="img/img-strokestoneburger.jpg" alt="">
-            <h2 class="card__tittle">Stroke&Stone Burger</h2>
+    
+            <!-- Tarjeta 3 -->
+            <div class="card card--dark carrusel">
+              <img class="card__img" src="img/img-strokestoneburger.jpg" alt="">
+              <h2 class="card__tittle">Stroke&Stone Burger</h2>
               <div class="card__abajo">
                 <p class="card__description">Este proyecto lo realicé como proyecto final del curso de desarrollo web de Coderhouse. El botón de abajo te lleva al sistema.</p>
                 <a href="https://marcelomarochi.github.io/proyectoFinalMarochi_desarrolloWebCoderhouse/index.html" target="_blank"><button class="btn degrade"> Ir al Proyecto</button></a>
               </div>
-            </div>
+            </div>          
           </div>
+
+          
+          <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+            </svg>
+          </button>
+          
         </div>
       </div>
     </section>
@@ -294,5 +302,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
