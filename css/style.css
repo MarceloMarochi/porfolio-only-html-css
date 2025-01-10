@@ -236,12 +236,6 @@ header {
     text-align: center;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .card {
     text-align: center;
     width: 350px;
@@ -324,11 +318,6 @@ header {
     opacity: 0.7;
   }
 
-  /* .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  } */
-
   .fa-github {
     background: #24292e;
     color: white;
@@ -394,6 +383,58 @@ header {
     height: 190%;
 }
 
+.carousel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    /* height: 304px;  */
+    padding: 1rem 0;
+    margin: 0px auto; 
+    max-width: 90vw;
+    overflow-x: hidden;
+}
+
+.carousel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: .5s ease-in-out;   
+}
+
+
+.carrusel-arrow {
+    border-radius: 50%;
+    background-color:rgb(227, 227, 227);
+    position: absolute;
+    z-index: 4;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 0.8rem;
+    height: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+    left: 0px;
+}
+
+.carrusel-next {
+    right: 0px;
+}
 
 /* SECTION 3 - EDUCACION */
 
@@ -606,7 +647,17 @@ header {
     margin-bottom: 2rem;
     padding: 0.5rem;
     text-align: center;
+    
 }
+
+.serrahome__linkedin__img {
+    transition: transform 0.3s;
+}
+
+.serrahome__linkedin__img:hover {
+    transform: scale(1.1667);
+}
+
 
 .heading-line-linkedin::before {
     content: "";
@@ -731,16 +782,15 @@ header {
         height: 12vh;
     }
 
+    .carousel-list {
+        width: 90%;
+    }
+
 }
     
 
 @media (min-width: 1200px) {
     /* SECCION 2 PROYECTOS */
-    .row {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-araund;
-    }
 
     /* SECTION 3 - SKILLS */
     .flex__skills {
