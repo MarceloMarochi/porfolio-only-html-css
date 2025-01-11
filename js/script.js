@@ -11,7 +11,7 @@ function App() {}
     const track = event.currentTarget.parentNode.querySelector('#track');
     const carrusel = track.querySelectorAll('.carrusel');
 
-    const carruselWidth = carrusel[0].offsetWidth;
+    const carruselWidth = carrusel[0].offsetWidth / 2;
 
     const trackWidth = track.offsetWidth;
     const listWidth = carruselList.offsetWidth;
