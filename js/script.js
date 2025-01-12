@@ -13,9 +13,9 @@ function App() {}
   
     let carruselWidth;
     if (window.innerWidth < 768) {
-      carruselWidth = carrusel[0].offsetWidth / 3; // Mover la mitad de la anchura del carrusel para pantallas menores a 768px
+      carruselWidth = carrusel[0].offsetWidth / 3;
     } else {
-      carruselWidth = carrusel[0].offsetWidth; // Mover más cantidad de píxeles para pantallas mayores a 768px
+      carruselWidth = carrusel[0].offsetWidth;
     }
   
     const trackWidth = track.offsetWidth;
