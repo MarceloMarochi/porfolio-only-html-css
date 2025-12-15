@@ -484,7 +484,7 @@ header {
 
 /* SECTION 4 - SKILLS */
 
-#skills {
+/* #skills {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
@@ -525,6 +525,94 @@ header {
 
 .skills__padding {
     padding: 5rem 0 2.5rem 0;  
+} */
+
+/* =========================
+   SKILLS - GRID MODERNA
+========================= */
+
+.skills__groups{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.skills__grid{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 14px;
+}
+
+.skill__card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 16px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: default;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+  user-select: none;
+  outline: none;
+}
+
+.skill__card i{
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  transition: transform .18s ease, filter .18s ease;
+}
+
+/* Texto */
+.skill__card span{
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.90);
+}
+
+/* Hover + "lift" + glow */
+.skill__card:hover{
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.09);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+.skill__card:hover i{
+  transform: scale(1.12) rotate(-3deg);
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.35));
+}
+
+/* Accesible con teclado */
+.skill__card:focus-visible{
+  border-color: rgba(255,255,255,0.35);
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.12);
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .skills__groups{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Respeta usuarios con menos animación */
+@media (prefers-reduced-motion: reduce){
+  .skill__card,
+  .skill__card i{
+    transition: none;
+  }
+  .skill__card:hover{
+    transform: none;
+  }
+  .skill__card:hover i{
+    transform: none;
+  }
 }
 
 
