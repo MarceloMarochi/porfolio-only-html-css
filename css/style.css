@@ -484,7 +484,7 @@ header {
 
 /* SECTION 4 - SKILLS */
 
-/* #skills {
+#skills {
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
@@ -510,7 +510,7 @@ header {
 }
 
 .skills__item {
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
 }
 
 .heading-line--skills::before {
@@ -525,11 +525,7 @@ header {
 
 .skills__padding {
     padding: 5rem 0 2.5rem 0;  
-} */
-
-/* =========================
-   SKILLS - GRID MODERNA
-========================= */
+}
 
 .skills__groups{
   display: grid;
